@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number of characters</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+    	<h1>What's the input string?</h1>
+    	<h2></h2>
+    	<input placeholder="Insert String" id="user">
+    	<button id="action">Display</button>
+    
+    <script>
+        $("#action").click(function(){
+            var input = $("#user").val();
+            $("h2").html(input + " has " + input.length + " charatcers.");
+            
+        });
+    </script>
+
+    </body>   
+</html>
